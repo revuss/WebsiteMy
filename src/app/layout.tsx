@@ -10,9 +10,9 @@ const Nav = dynamic(() => import("@/app/components/NavBar"), { ssr: true });
 const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "R E V U S | Software Engineer" ?? "Default Title",
+  title: "R E V U S | Software Engineer",
   description:
-    "Portfolio of Sarath Teja Revu, a skilled software engineer specializing in Java, Spring Boot, Angular, and React.",
+    "Portfolio of Sarath Teja Revu, a skilled software engineer specializing in Java, Spring Boot, Express, Angular, and React.",
   keywords:
     "Sarath Teja Revu, Software Engineer, Java Developer, Spring Boot, Angular, React, Portfolio, Revus",
 };
@@ -24,10 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <CustomHead
-        description={metadata.description ?? "Default description"}
-        url="https://sarathtejarevu.vercel.app/"
-      />
+      <CustomHead url="https://sarathtejarevu.vercel.app/" />
 
       <body className={inter.className}>
         <Nav />

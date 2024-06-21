@@ -11,8 +11,8 @@ interface CustomHeadProps {
 
 const CustomHead: React.FC<CustomHeadProps> = ({
   title = "Revus",
-  description = "Default description",
-  keywords = "default, keywords",
+  description = "Portfolio of Sarath Teja Revu, skilled software engineer specializing in Java, Spring Boot, Angular, Express and React.",
+  keywords = "Sarath Teja Revu, Full stack, Software Engineer, Java Developer, Spring Boot, Angular, React, Portfolio, Revus",
   url = "https://sarathtejarevu.vercel.app/",
   image = "/default-image.jpg",
 }) => {
