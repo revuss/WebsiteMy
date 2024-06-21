@@ -65,23 +65,28 @@ const NavBar = () => {
           >
             <ul className="cursor-pointer md:font-medium font-semibold  align-center justify-center flex flex-col p-4 md:p-0 mt-4 md:h-auto h-[80vh]  rounded-lg text-center text-2xl md:text-sm md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0  ">
               <li onClick={() => scrollToSection("home")}>
-                <span className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <span className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0">
                   Home
                 </span>
               </li>
               <li onClick={() => scrollToSection("about")}>
-                <a className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <a className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0">
                   About
                 </a>
               </li>
 
               <li onClick={() => scrollToSection("projects")}>
-                <span className="cursor-pointer block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <span className="cursor-pointer block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0">
                   Projects
                 </span>
               </li>
               <li>
-                <a className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0"
+                >
                   Resume
                 </a>
               </li>
@@ -89,7 +94,7 @@ const NavBar = () => {
                 onClick={() => scrollToSection("contact")}
                 className="cursor-pointer"
               >
-                <span className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <span className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0">
                   Contact
                 </span>
               </li>
