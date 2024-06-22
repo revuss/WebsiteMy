@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { sendEmail } from "../Utility/emailUtils";
+import Link from "next/link";
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -30,17 +31,17 @@ const Contact: React.FC = () => {
                 </p>
                 <ul className="mb-0 md:mb-0 font-bold text-plight ">
                   <li>
-                    <a href="mailto:sarathteja14@gmail.com">
+                    <Link href="mailto:sarathteja14@gmail.com">
                       <p className="text-plight">
                         {" "}
                         Mail : Sarathteja14@gmail.com
                       </p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a href="tel:+918500430354" className="text-plight">
+                    <Link href="tel:+918500430354" className="text-plight">
                       <p className="text-plight">Mobile : +91 8500430354</p>
-                    </a>
+                    </Link>
                   </li>
 
                   <li>

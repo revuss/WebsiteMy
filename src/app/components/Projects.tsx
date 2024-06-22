@@ -1,6 +1,7 @@
 import React from "react";
 import { projectDetails, ProjectDetail } from "./Data/projectDetails";
 import "@/app/components/styles/Project.css";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -24,9 +25,9 @@ const Projects = () => {
                   <div className="btn items-center bg-pdark hover:bg-second  sm:flex text-white hover:text-pdark">
                     <div className="p-5">
                       <h3 className="text-xl font-bold tracking-tight ">
-                        <a href={project.link} target="_blank">
+                        <Link href={project.link} target="_blank">
                           {project.name}
-                        </a>
+                        </Link>
                       </h3>
                       <p className="mt-3 mb-4  ">{project.description}</p>
                       <p className="mt-3 mb-4  ">

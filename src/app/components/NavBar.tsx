@@ -70,9 +70,9 @@ const NavBar = () => {
                 </span>
               </li>
               <li onClick={() => scrollToSection("about")}>
-                <a className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0">
+                <span className="block py-2 px-3 text-white rounded hover:text-second md:hover:bg-transparent md:border-0 md:hover:text-second md:p-0">
                   About
-                </a>
+                </span>
               </li>
 
               <li onClick={() => scrollToSection("projects")}>
