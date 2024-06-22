@@ -4,7 +4,7 @@ const FivePage = () => {
   return (
     <>
       <div>
-        <div className=" flex bg-white w-full justify-center items-center snap-always snap-start ">
+        <div className=" fifth-page ">
           <div className="relative overflow-hidden bg-white">
             <div className="relative z-10 bg-white">
               <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16 bg-white">

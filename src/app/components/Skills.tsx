@@ -1,22 +1,19 @@
 import React from "react";
+import "@/app/components/styles/Skills.css";
 
 const Skills = () => {
   return (
     <>
-      <section className="h-auto Skills-page text-white my-10 mt-20">
+      <div className="skill-section-head">
         <section>
-          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div className="my-5">
-              <h2 className=" home-title tracking-tight text-3xl mb-4">
-                My Technical Skills
-              </h2>
-              <p className="skill-text text-xl">
-                As a full-stack developer, I excel in backend and frontend
-                development, seamless integration, Git version control, cloud
-                deployment, and database schema design, ensuring optimized
-                performance and functionality for web applications.
-              </p>
-            </div>
+          <div className="skill-section">
+            <h2 className=" skill-title">My Technical Skills</h2>
+            <p className="skill-text text-xl">
+              As a full-stack developer, I excel in backend and frontend
+              development, seamless integration, Git version control, cloud
+              deployment, and database schema design, ensuring optimized
+              performance and functionality for web applications.
+            </p>
             <div className="space-y-8 my-20 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
               <div>
                 <h3 className="mb-2 skills text-xl font-semibold ">
@@ -75,7 +72,7 @@ const Skills = () => {
             </div>
           </div>
         </section>
-      </section>
+      </div>
     </>
   );
 };

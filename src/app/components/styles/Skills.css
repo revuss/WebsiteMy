@@ -1,0 +1,11 @@
+.skill-section-head {
+  @apply h-auto text-white my-10 mt-20;
+}
+
+.skill-section {
+  @apply py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 my-5;
+}
+
+.skill-title {
+  @apply tracking-tight text-3xl mb-4;
+}

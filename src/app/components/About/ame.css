@@ -28,16 +28,22 @@ section {
 .vertical_content .col_left {
   top: 35%;
   flex: 1;
-  max-width: 45%;
+  max-width: 50%;
   position: sticky;
 }
 .vertical_content .col_right {
-  width: 100%;
+  max-width: 100%;
   /* border: 10px solid black; */
-  background-color: white;
 }
 
 h2 {
   font-size: 10px;
   font-weight: 700;
+}
+.first-page {
+  @apply h-5/6 flex w-full justify-center items-center bg-white;
+}
+
+.fifth-page {
+  @apply flex bg-white w-full justify-center items-center snap-always snap-start;
 }

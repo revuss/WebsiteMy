@@ -1,0 +1,15 @@
+.project-container {
+  @apply h-auto text-white bg-white;
+}
+
+.project-div {
+  @apply py-8 bg-white px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6;
+}
+
+.project-head {
+  @apply mx-auto bg-white max-w-screen-sm text-center mb-8 lg:mb-16;
+}
+
+.project-grid {
+  @apply grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 bg-white;
+}

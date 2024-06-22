@@ -1,0 +1,31 @@
+.Hero-section {
+  @apply min-h-[95vh] justify-center flex mx-auto max-w-[90vw] select-none;
+}
+
+.Grid-section {
+  @apply grid grid-cols-1 tracking-wide;
+}
+
+.Div-section {
+  @apply mr-auto place-self-center;
+}
+
+.H-section {
+  @apply font-semibold leading-loose text-white text-sm md:text-xl mb-2;
+}
+
+.Line-section {
+  @apply leading-loose mb-10;
+}
+
+.content-section {
+  @apply text-2xl font-bold tracking-wide text-second text-start md:text-4xl lg:text-5xl xl:text-6xl;
+}
+
+.Hire-section {
+  @apply inline-flex items-center hover:text-primary justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg hover:bg-second focus:ring-4 focus:ring-transparent;
+}
+
+.About-section {
+  @apply inline-flex items-center justify-center px-5 bg-white py-3 text-base font-medium text-center text-primary border-4 border-second rounded-lg hover:bg-gray-100 focus:ring-0 focus:ring-black;
+}

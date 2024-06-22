@@ -3,7 +3,7 @@ import React from "react";
 const FirstPage = () => {
   return (
     <>
-      <div className="h-5/6 flex w-full justify-center items-center bg-white">
+      <div className="first-page  bg-white">
         <div className="relative overflow-hidden">
           <div className="relative z-10">
             <div className="max-w-[85rem] bg-white mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">

@@ -1,14 +1,15 @@
 import React from "react";
 import { projectDetails, ProjectDetail } from "./Data/projectDetails";
+import "@/app/components/styles/Project.css";
 
 const Projects = () => {
   return (
     <>
-      <section id="projects" className="h-auto Skills-page text-white bg-white">
+      <section id="projects" className="project-container">
         <section className="bg-white">
-          <div className="py-8 bg-white px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-            <div className="mx-auto bg-white max-w-screen-sm text-center mb-8 lg:mb-16">
-              <h2 className="mb-4 bg-white text-4xl font-extrabold   tracking-tight font-extrabold text-primary">
+          <div className="project-div">
+            <div className="project-head">
+              <h2 className="mb-4 bg-white text-4xl font-extrabold tracking-tight font-extrabold text-primary">
                 Projects
               </h2>
               <p className="font-light text-primary bg-white font-medium lg:mb-16 sm:text-xl ">
@@ -17,7 +18,7 @@ const Projects = () => {
                 deliver exceptional results across various domains.
               </p>
             </div>
-            <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 bg-white">
+            <div className="project-grid">
               {projectDetails.map((project) => (
                 <div key={project.id}>
                   <div className="btn items-center bg-pdark hover:bg-second  sm:flex text-white hover:text-pdark">

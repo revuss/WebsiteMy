@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
-import CustomHead from "./components/Head";
 
 const Footer = dynamic(() => import("@/app/components/Footer"), { ssr: true });
 const Nav = dynamic(() => import("@/app/components/NavBar"), { ssr: true });
@@ -24,8 +23,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <CustomHead url="https://sarathtejarevu.vercel.app/" />
-
       <body className={inter.className}>
         <Nav />
         {children}
