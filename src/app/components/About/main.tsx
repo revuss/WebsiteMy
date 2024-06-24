@@ -5,6 +5,8 @@ import Secondpage from "./Secondpage";
 import Thirdpage from "./Thirdpage";
 import FourthPage from "./FourthPage";
 import FivePage from "./FivePage";
+import { h2Animation, pAnimation } from "@/app/Utility/animations";
+import { motion } from "framer-motion";
 
 const main = () => {
   return (
@@ -13,9 +15,17 @@ const main = () => {
         <div className="container bg-white">
           <div className="vertical_content bg-white">
             <div className="col col_left">
-              <h2 className="vertical_heading mx-10 mt-10 bg-white">
-                <span className="mt-56 text-3xl lg:text xl:text-6xl bg-white">
-                  <p className="text-white">ABOUT ME</p>
+              <h2 className="vertical_heading mx-10 mt-10">
+                <span className="mt-56 text-3xl lg:text xl:text-6xl">
+                  <motion.p
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ margin: "-50px", amount: 0.5 }}
+                    variants={h2Animation}
+                    className="text-white "
+                  >
+                    ABOUT ME
+                  </motion.p>
                 </span>
               </h2>
             </div>

@@ -1,7 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
+import Head from "next/head";
+import Script from "next/script";
 
 const Footer = dynamic(() => import("@/app/components/Footer"), { ssr: true });
 const Nav = dynamic(() => import("@/app/components/NavBar"), { ssr: true });
@@ -23,10 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script>document.documentElement.classList.add('js')</script>
+      </Head>
       <body className={inter.className}>
         <Nav />
         {children}
         <Footer />
+        <Script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></Script>
       </body>
     </html>
   );

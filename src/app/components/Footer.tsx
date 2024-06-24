@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-
+import { divAnimation } from "../Utility/animations";
 const Footer = () => {
   return (
     <footer className="">

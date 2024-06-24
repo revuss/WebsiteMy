@@ -3,6 +3,7 @@ import Lenis from "lenis";
 import dynamic from "next/dynamic";
 import { useEffect } from "react";
 import useDisableRightClick from "./Utility/useDisableRightClick";
+import useReveal from "./Utility/Reveal";
 
 const Hero = dynamic(() => import("@/app/components/Hero"), { ssr: true });
 const About = dynamic(() => import("@/app/components/About/main"), {
@@ -30,6 +31,8 @@ export default function Home() {
     requestAnimationFrame(raf);
   });
   useDisableRightClick();
+  useReveal();
+
   return (
     <>
       <div className="select-none">

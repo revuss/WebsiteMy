@@ -1,19 +1,26 @@
 import React, { useRef, useState } from "react";
 import { sendEmail } from "../Utility/emailUtils";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { divAnimation, h2Animation } from "../Utility/animations";
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   return (
     <>
       <section id="contact" className="bg-pdark">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mb-4 items-start">
-            <div className="mb-6  text-start sm:text-center md:mx-auto md:mb-12">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ margin: "-10px", amount: 0.5 }}
+              variants={h2Animation}
+              className="mb-6  text-start sm:text-center md:mx-auto md:mb-12"
+            >
               <p className="text-start font-bold uppercase tracking-wide text-plight">
                 Get In Touch
               </p>
@@ -21,11 +28,17 @@ const Contact: React.FC = () => {
                 Feel free to reach out if you wanna collaborate with me, or
                 simply have a chat.
               </h2>
-            </div>
+            </motion.div>
           </div>
           <div className="flex items-stretch justify-start mb-0">
             <div className="grid md:grid-cols-2  w-full mb-0">
-              <div className="h-full pr-6 text-start align-middle flex-col flex justify-center items-start mb-0">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ margin: "-50px", amount: 0.5 }}
+                variants={divAnimation}
+                className="h-full pr-6 text-start align-middle flex-col flex justify-center items-start mb-0"
+              >
                 <p className="mt-3 mb-4 font-bold text-lg text-white">
                   START A PROJECT
                 </p>
@@ -61,8 +74,15 @@ const Contact: React.FC = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
-              <div className="card h-fit max-w-6xl px-5 md:px-12" id="form">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ margin: "-50px", amount: 0.5 }}
+                variants={divAnimation}
+                className="card h-fit max-w-6xl px-5 md:px-12"
+                id="form"
+              >
                 <h2 className="mb-4 text-2xl font-bold text-plight">
                   Quick Message
                 </h2>
@@ -137,7 +157,7 @@ const Contact: React.FC = () => {
                     </button>
                   </div>
                 </form>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
