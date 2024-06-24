@@ -6,8 +6,8 @@ const FourthPage = () => {
   return (
     <>
       <div>
-        <div className="fifth-page  bg-white">
-          <div className="relative overflow-hidden bg-white">
+        <div className="fifth-page ">
+          <div className="relative bg-white">
             <div className="relative z-10 bg-white">
               <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16 bg-white">
                 <div className="max-w-3xl text-start mx-auto bg-white">
@@ -17,7 +17,7 @@ const FourthPage = () => {
                       whileInView="visible"
                       viewport={{ margin: "-20px", amount: 0.5 }}
                       variants={pAnimation}
-                      className="about-text-h block bg-white text-sa text-xl md:text-4xl lg:text-5xl"
+                      className="about-text-h block bg-transparent text-sa text-xl md:text-4xl lg:text-5xl"
                     >
                       Embracing Diversity
                     </motion.h1>
@@ -29,7 +29,7 @@ const FourthPage = () => {
                       whileInView="visible"
                       viewport={{ margin: "-20px", amount: 0.5 }}
                       variants={pAnimation}
-                      className="text-about mt-5 text-start bg-white md:text-justify  dark:text-white"
+                      className="text-about mt-5 text-start bg-transparent md:text-justify  dark:text-white"
                     >
                       Technology is a vast field, and I&apos;ve explored many of
                       its areas. From data annotation to SEO analysis and more,

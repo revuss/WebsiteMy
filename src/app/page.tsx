@@ -36,11 +36,22 @@ export default function Home() {
   return (
     <>
       <div className="select-none">
-        <Hero />
+        <div className="overflow-x-hidden">
+          {" "}
+          <Hero />
+        </div>
         <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <div className="overflow-x-hidden">
+          {" "}
+          <Skills />
+        </div>
+        <div className="overflow-x-hidden">
+          {" "}
+          <Projects />
+        </div>
+        <div className="overflow-x-hidden">
+          <Contact />
+        </div>
       </div>
     </>
   );

@@ -8,7 +8,7 @@ const Secondpage = () => {
       {" "}
       <div className="snap-always snap-start bg-white">
         <div className="h-5/6 w-full flex justify-center bg-white  items-center ">
-          <div className="relative overflow-hidden bg-white">
+          <div className="relative  bg-white">
             <div className="relative z-10 bg-white">
               <div className="max-w-[85rem] bg-white mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
                 <div className="max-w-3xl text-start bg-white mx-auto">
@@ -18,7 +18,7 @@ const Secondpage = () => {
                       whileInView="visible"
                       viewport={{ margin: "-20px", amount: 0.5 }}
                       variants={pAnimation}
-                      className="about-text-h bg-white block text-sa text-xl md:text-4xl lg:text-5xl"
+                      className="about-text-h bg-transparent block text-sa text-xl md:text-4xl lg:text-5xl"
                     >
                       Creative Solutions
                     </motion.h1>
@@ -30,7 +30,7 @@ const Secondpage = () => {
                       whileInView="visible"
                       viewport={{ margin: "-20px", amount: 0.5 }}
                       variants={pAnimation}
-                      className="text-about mt-5 bg-white text-start md:text-justify  dark:text-white"
+                      className="text-about mt-5 bg-transparent text-start md:text-justify  dark:text-white"
                     >
                       I love finding smart solutions, whether it&apos;s building
                       user-friendly web apps, refining code, or tackling complex

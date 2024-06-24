@@ -5,8 +5,8 @@ import React from "react";
 const FirstPage = () => {
   return (
     <>
-      <div className="first-page  bg-white">
-        <div className="relative overflow-hidden">
+      <div className="first-page">
+        <div className="relative">
           <div className="relative z-10">
             <div className="max-w-[85rem] bg-white mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
               <div className="max-w-3xl text-start mx-auto bg-white">
@@ -16,7 +16,7 @@ const FirstPage = () => {
                     whileInView="visible"
                     viewport={{ margin: "-20px", amount: 0.5 }}
                     variants={pAnimation}
-                    className="about-text-h bg-white block text-sa text-xl md:text-4xl lg:text-5xl"
+                    className="about-text-h bg-transparent block text-sa text-xl md:text-4xl lg:text-5xl"
                   >
                     My Tech Journey
                   </motion.h1>
@@ -28,7 +28,7 @@ const FirstPage = () => {
                     whileInView="visible"
                     viewport={{ margin: "-20px", amount: 0.5 }}
                     variants={pAnimation}
-                    className="text-about bg-white mt-5 text-justify"
+                    className="text-about bg-transparent mt-5 text-justify"
                   >
                     In the fast-paced digital world, I&apos;ve dived into
                     innovation, strategic problem-solving, and continuous
