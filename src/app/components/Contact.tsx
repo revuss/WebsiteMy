@@ -35,9 +35,9 @@ const Contact: React.FC = () => {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ margin: "-50px", amount: 0.5 }}
+                viewport={{ margin: "-50px", amount: 0.2 }}
                 variants={divAnimation}
-                className="h-full pr-6 text-start align-middle flex-col flex justify-center items-start mb-0"
+                className="h-full pr-6 text-start align-middle flex-col flex justify-center items-start my-10 space-y-2"
               >
                 <p className="mt-3 mb-4 font-bold text-lg text-white">
                   START A PROJECT
